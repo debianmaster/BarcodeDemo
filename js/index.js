@@ -27,7 +27,7 @@ var app = {
     // `load`, `deviceready`, `offline`, and `online`.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
-        document.getElementById('scan').addEventListener('click', this.scan, false);        
+        //document.getElementById('scan').addEventListener('click', this.scan, false);        
     },
 
     // deviceready Event Handler
@@ -80,3 +80,7 @@ var app = {
         } );
     }
 };
+
+function fnInitScan(){
+	app.scan();
+}
