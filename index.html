@@ -7,13 +7,14 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Barcode Scanner</title>
     </head>
-    <body onclick="fnInitScan()">
-        <div class="app" id="scan">            
+    <body>
+        <div class="app">            
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
+				<img src="img/logo.png" id="scan"></img>
             </div>            
-            <p id="info"></p>
+            <p id="info"></p>            
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="barcodescanner.js"></script>
